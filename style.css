@@ -1,0 +1,91 @@
+/* ========================================= google fonts ========================================= */
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap");
+
+:root {
+  --white-color: #ffffff;
+  --black-color: #0b0b0b;
+  --grey: #acacac;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gothic A1", sans-serif;
+}
+
+.projectdetails-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  gap: 5px;
+  margin: 10px 0;
+}
+
+.headline {
+  color: var(--black-color);
+  font-weight: normal;
+  font-size: 6vmin;
+}
+
+.description {
+  color: var(--grey);
+  font-weight: bold;
+}
+
+.automatic-image-caraousel {
+  width: 70vw;
+  margin: 15px auto;
+  overflow: hidden;
+}
+
+.automatic-image-caraousel-container {
+  display: flex;
+  scroll-behavior: smooth;
+  transition: all 0.4s ease-in-out;
+}
+
+.image-slidesbox {
+  flex: 0 0 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  height: 70vh;
+  position: relative;
+}
+
+.first-image-slide {
+  background-image: url("images/sliderpic.jpg");
+}
+
+.second-image-slide {
+  background-image: url("images/sliderpic1.jpg");
+}
+
+.third-image-slide {
+  background-image: url("images/sliderpic2.jpg");
+}
+
+.fourth-image-slide {
+  background-image: url("images/sliderpic3.jpg");
+}
+
+.fifth-image-slide {
+  background-image: url("images/sliderpic4.jpg");
+}
+
+.image-slide-text {
+  color: var(--white-color);
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding: 10px;
+  border-radius: 10px;
+  backdrop-filter: blur(50px);
+}
